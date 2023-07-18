@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:learn_bloc/blocs/internet_bloc/internet_bloc.dart';
+import 'package:learn_bloc/cubit/internet_cubit.dart';
 import 'package:learn_bloc/screens/home_screen.dart';
 
 void main() {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => InternetBloc(),
+      create: (context) => InternetCubit(),
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
